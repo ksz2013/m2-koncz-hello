@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Koncz_Hello::css/store.css"/>
+    </head>
+    <body>
+        <referenceBlock name="head.additional">
+            <block class="Koncz\Hello\Block\Test" name="koncz.test" template="Koncz_Hello::test/general.phtml">
+                <block class="Magento\Directory\Block\Currency" name="opengraph.currency" as="meta.currency" template="Magento_Catalog::product/view/opengraph/currency.phtml"/>
+            </block>
+        </referenceBlock>
+        <!--<move element="logo" destination="catalog.topnav" />-->
+        <!--<move element="top.search" destination="catalog.topnav" />-->
+    </body>
+</page>
